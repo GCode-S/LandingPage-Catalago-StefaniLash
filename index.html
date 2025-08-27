@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Lash Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Catálogo Stéfani Lash</h1>
+                <nav class="nav">
+                    <a href="#inicio" class="nav-link">Início</a>
+                    <a href="#cilios" class="nav-link">Cílios</a>
+                    <a href="#cuidados" class="nav-link">Cuidados</a>
+                    <a href="#sobrancelha" class="nav-link">Sobrancelha</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Realçando a beleza do seu olhar com técnicas modernas e cuidadosas</h2>
+                <p class="hero-description">
+                    Especialista em extensão de cílios e design de sobrancelhas, oferecendo serviços de alta qualidade para
+                    valorizar sua beleza natural.
+                </p>
+                <button class="btn btn-primary" onclick="scrollToContact()">
+                    <span class="btn-icon">♥</span>
+                    Agende seu horário
+                </button>
+            </div>
+            <div class="hero-image">
+                <img src="public/profile.jpg" alt="Mulher com olhar marcante e cílios alongados" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Eyelashes Section -->
+    <section id="cilios" class="services">
+        <div class="container">
+            <h2 class="section-title">CÍLIOS</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="public/marrom.png" alt="Extensão de cílios Marrom" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-name">Marrom</h3>
+                        <p class="service-description">Olhar natural e sofisticado com tons terrosos</p>
+                        <div class="service-prices">
+                            <div class="price-item">
+                                <span class="price-label">Aplicação:</span>
+                                <span class="price-badge primary">R$ 130</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-label">Manutenção:</span>
+                                <span class="price-badge secondary">R$ 85</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="public/fio-a-fio.png" alt="Extensão de cílios Fio a Fio" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-name">Fio a Fio</h3>
+                        <p class="service-description">Técnica clássica para um resultado natural</p>
+                        <div class="service-prices">
+                            <div class="price-item">
+                                <span class="price-label">Aplicação:</span>
+                                <span class="price-badge primary">R$ 120</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-label">Manutenção:</span>
+                                <span class="price-badge secondary">R$ 80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="public/brasileiro.jpg" alt="Extensão de cílios Brasileiro" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-name">Brasileiro</h3>
+                        <p class="service-description">Volume médio com curvatura brasileira</p>
+                        <div class="service-prices">
+                            <div class="price-item">
+                                <span class="price-label">Aplicação:</span>
+                                <span class="price-badge primary">R$ 125</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-label">Manutenção:</span>
+                                <span class="price-badge secondary">R$ 80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="public/egipcio.png" alt="Extensão de cílios Egípcio" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-name">Egípcio</h3>
+                        <p class="service-description">Olhar marcante e alongado estilo egípcio</p>
+                        <div class="service-prices">
+                            <div class="price-item">
+                                <span class="price-label">Aplicação:</span>
+                                <span class="price-badge primary">R$ 140</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-label">Manutenção:</span>
+                                <span class="price-badge secondary">R$ 90</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="public/fox.jpg" alt="Extensão de cílios Fox" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-name">Fox</h3>
+                        <p class="service-description">Efeito raposa para olhar sedutor</p>
+                        <div class="service-prices">
+                            <div class="price-item">
+                                <span class="price-label">Aplicação:</span>
+                                <span class="price-badge primary">R$ 130</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-label">Manutenção:</span>
+                                <span class="price-badge secondary">R$ 85</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="public/6d.png" alt="Extensão de cílios 6D" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-name">6D</h3>
+                        <p class="service-description">Volume máximo com técnica 6D</p>
+                        <div class="service-prices">
+                            <div class="price-item">
+                                <span class="price-label">Aplicação:</span>
+                                <span class="price-badge primary">R$ 150</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-label">Manutenção:</span>
+                                <span class="price-badge secondary">R$ 100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Care Instructions Section -->
+    <section id="cuidados" class="care-section">
+        <div class="container">
+            <h2 class="section-title">Cuidados com seus cílios</h2>
+            <div class="care-grid">
+                <div class="care-card">
+                    <div class="care-header">
+                        <span class="care-icon">✨</span>
+                        <h3 class="care-title">Antes da aplicação</h3>
+                    </div>
+                    <ul class="care-list">
+                        <li class="care-item">
+                            <span class="check-icon">✓</span>
+                            <span>Chegar sem maquiagem nos olhos</span>
+                        </li>
+                        <li class="care-item">
+                            <span class="check-icon">✓</span>
+                            <span>Não usar máscara de cílios 24h antes</span>
+                        </li>
+                        <li class="care-item">
+                            <span class="check-icon">✓</span>
+                            <span>Higienizar bem a região dos olhos</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="care-card">
+                    <div class="care-header">
+                        <span class="care-icon">♥</span>
+                        <h3 class="care-title">Depois da aplicação</h3>
+                    </div>
+                    <ul class="care-list">
+                        <li class="care-item">
+                            <span class="check-icon">✓</span>
+                            <span>Evitar molhar nas primeiras 24h</span>
+                        </li>
+                        <li class="care-item">
+                            <span class="check-icon">✓</span>
+                            <span>Não usar produtos oleosos na região</span>
+                        </li>
+                        <li class="care-item">
+                            <span class="check-icon">✓</span>
+                            <span>Escovar os cílios diariamente com escovinha</span>
+                        </li>
+                        <li class="care-item">
+                            <span class="check-icon">✓</span>
+                            <span>Fazer manutenção no tempo correto</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eyebrow Section -->
+    <section id="sobrancelha" class="eyebrow-section">
+        <div class="container">
+            <h2 class="section-title">Sobrancelhas</h2>
+            <div class="eyebrow-grid">
+                <div class="eyebrow-card">
+                    <div class="eyebrow-icon">👁</div>
+                    <h3 class="eyebrow-title">Designer de Sobrancelha</h3>
+                    <p class="eyebrow-description">Modelagem profissional para realçar seu olhar</p>
+                    <span class="price-badge large">R$ 20</span>
+                </div>
+                <div class="eyebrow-card">
+                    <div class="eyebrow-icon">⭐</div>
+                    <h3 class="eyebrow-title">Designer + Henna</h3>
+                    <p class="eyebrow-description">Modelagem completa com coloração natural</p>
+                    <span class="price-badge large">R$ 35</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contato" class="contact-footer">
+        <div class="container">
+            <h2 class="contact-title">Agende já seu horário e valorize ainda mais sua beleza</h2>
+            <p class="contact-description">
+                Entre em contato conosco através dos canais abaixo e agende seu horário. Estamos prontas para realçar a
+                beleza do seu olhar!
+            </p>
+            <div class="contact-buttons">
+                <button class="btn btn-whatsapp" onclick="openWhatsApp()">
+                    <!-- <span class="btn-icon logo-whats"></span> -->
+                    WhatsApp
+                </button>
+                <button class="btn btn-instagram" onclick="openInstagram()">
+                    <!-- <span class="btn-icon">📷</span> -->
+                    Instagram
+                </button>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Desenvolvido por <a href="https://github.com/GCode-S">GCode-S</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

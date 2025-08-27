@@ -1,0 +1,491 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #fefefe;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Typography */
+.logo,
+.hero-title,
+.section-title,
+.service-name,
+.care-title,
+.eyebrow-title,
+.contact-title {
+  font-family: "Playfair Display", serif;
+}
+
+/* Header */
+.header {
+  background-color: #fefefe;
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d946ef;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #d946ef;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav {
+    margin-top: 15px;
+    gap: 1rem;
+  }
+}
+
+/* Hero Section */
+.hero {
+  background-color: rgba(217, 70, 239, 0.1);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 4xl;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  text-wrap: balance;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: pretty;
+}
+
+.hero-image {
+  margin-top: 3rem;
+}
+
+.hero-img {
+  max-width: 28rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #d946ef;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #c026d3;
+}
+
+.btn-whatsapp {
+  background-color: #16a34a;
+  background-image: url("/public/logo-whats.png");
+  background-size: 1.5rem auto;
+  background-position-y: center;
+  width: 10rem;
+  background-repeat: no-repeat;
+  background-position-x: 5%;
+  color: white;
+}
+
+.btn-whatsapp:hover {
+  background-color: #15803d;
+}
+
+.btn-instagram {
+  background-color: #fa7e1e;
+  color: #fff;
+  background-image: url("/public/logo-insta.png");
+  background-size: 1.5rem auto;
+  background-position-y: center;
+  width: 10rem;
+  background-repeat: no-repeat;
+  background-position-x: 5%;
+}
+
+.btn-instagram:hover {
+  background-color: #dc701d;
+  color: white;
+}
+
+.btn-email {
+  background-color: transparent;
+  color: #f59e0b;
+  border: 1px solid #f59e0b;
+}
+
+.btn-email:hover {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.btn-icon {
+  margin-right: 0.5rem;
+}
+
+/* Services Section */
+.services {
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1a1a1a;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-card {
+  background-color: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+  width: 100%;
+  height: 12rem;
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 1.5rem;
+}
+
+.service-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.service-description {
+  color: #6b7280;
+  margin-bottom: 1rem;
+  text-wrap: pretty;
+}
+
+.service-prices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.price-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.price-badge.primary {
+  background-color: #f3e8ff;
+  color: #7c3aed;
+}
+
+.price-badge.secondary {
+  background-color: transparent;
+  color: #6b7280;
+  border: 1px solid #d1d5db;
+}
+
+.price-badge.large {
+  font-size: 1.125rem;
+  padding: 0.5rem 1rem;
+  background-color: #f3e8ff;
+  color: #7c3aed;
+}
+
+/* Care Section */
+.care-section {
+  padding: 5rem 0;
+  background-color: rgba(243, 244, 246, 0.3);
+}
+
+.care-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 4xl;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .care-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.care-card {
+  background-color: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.care-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.care-icon {
+  font-size: 1.25rem;
+}
+
+.care-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #d946ef;
+}
+
+.care-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.care-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.check-icon {
+  color: #16a34a;
+  font-weight: bold;
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+}
+
+/* Eyebrow Section */
+.eyebrow-section {
+  padding: 5rem 0;
+}
+
+.eyebrow-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .eyebrow-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.eyebrow-card {
+  background-color: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.eyebrow-card:hover {
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+}
+
+.eyebrow-icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(217, 70, 239, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 2.5rem;
+}
+
+.eyebrow-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.eyebrow-description {
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+/* Contact Footer */
+.contact-footer {
+  background-color: rgba(217, 70, 239, 0.2);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.contact-description {
+  color: #6b7280;
+  margin-bottom: 2rem;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: pretty;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .contact-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
