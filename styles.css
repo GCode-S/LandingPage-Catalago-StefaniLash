@@ -303,8 +303,8 @@ body {
 /* Care Section */
 .care-section {
   padding: 5rem 0;
-  background-color: #f6bcfd;
-  border-top: 1px solid #7c3aed;
+  /* background-color: #f6bcfd; */
+  background: linear-gradient(to bottom, #FAEBFC, #F3D6BC);
 }
 
 
@@ -369,7 +369,7 @@ body {
 /* Eyebrow Section */
 .eyebrow-section {
   padding: 5rem 0;
-  background-color: #f7f7f7;
+  background-color: #f3d6bc;
 }
 
 .eyebrow-grid {
@@ -425,7 +425,7 @@ body {
 
 /* Contact Footer */
 .contact-footer {
-  background-color: #F6D9FB;
+  background-color: #F3D6BC;
   padding: 4rem 0;
   text-align: center;
 }
