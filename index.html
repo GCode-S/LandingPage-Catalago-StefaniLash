@@ -379,7 +379,7 @@
     position: absolute;
     bottom: 0; left: 0; right: 0;
     padding: 1.8rem 1.5rem 1.5rem;
-    background: linear-gradient(to top, rgba(28,26,23,0.82) 0%, transparent 100%);
+    background: linear-gradient(to top, rgba(28, 26, 23, 0.973) 0%, transparent 100%);
     transform: translateY(5px);
     transition: transform 0.4s ease;
   }
@@ -923,16 +923,18 @@
       flex-direction: column;
     }
 
-    /* Imagem ocupa altura fixa, não expande */
+    /* Imagem inteira visível no mobile (sem corte) */
     .lash-card img {
       width: 100%;
-      height: 200px;
-      object-fit: cover;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
       flex-shrink: 0;
+      background: #1b1916;
     }
 
     /* Info sai de cima da imagem e vai abaixo, com fundo sólido */
-    .lash-card-info {
+    /* .lash-card-info {
       position: static;
       transform: none !important;
       background: var(--charcoal);
@@ -940,7 +942,7 @@
       display: flex;
       flex-direction: column;
       gap: 0.4rem;
-    }
+    } */
 
     .lash-card-name {
       font-size: 1.15rem;
@@ -958,8 +960,8 @@
     .price-label { font-size: 0.48rem; }
     .price-value { font-size: 1rem; }
 
-    /* Hover: zoom apenas na imagem, info não se move */
-    .lash-card:hover img { transform: scale(1.04); }
+    /* Sem zoom no mobile para manter 100% da imagem visível */
+    .lash-card:hover img { transform: none; }
 
     /* Demais ajustes mobile */
     .cilios-header { gap: 2rem; }
